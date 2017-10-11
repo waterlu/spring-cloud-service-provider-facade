@@ -13,10 +13,10 @@ public interface ProductMgtAPI {
     @PostMapping("/")
     ResponseResult createProduct(@RequestBody ProductDTO product);
 
-    @PutMapping("/{productUUid}")
-    ResponseResult updateProduct(@PathVariable("productUUid") String productUUid, @RequestBody ProductDTO product);
+    @PutMapping("/{productUuid}")
+    ResponseResult updateProduct(@PathVariable("productUuid") String productUuid, @RequestBody ProductDTO product);
 
-    @DeleteMapping("/{productUUid}")
-    ResponseResult deleteProduct(@PathVariable("productUUid") String productUUid);
+    @DeleteMapping("/{productUuid}")
+    ResponseResult deleteProduct(@PathVariable("productUuid") String productUuid);
 
 }
